@@ -1,0 +1,4 @@
+== README
+
+
+This is README file for the social Rails app. It has mysql database and it's deployed to Heroku.
