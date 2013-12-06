@@ -1,8 +1,9 @@
 SocialApp::Application.routes.draw do
   
+  get "users/new"
   resources :users
-  root :to => 'pages#home'
-  
+  root :to => 'users#new'
+  match '/home' => 'users#new', via: [:post, :get]  
   get "pages/home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
