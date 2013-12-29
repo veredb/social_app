@@ -1,5 +1,6 @@
 SocialApp::Application.routes.draw do
   
+  get "presents/new"
   get "users/new"
   resources :users
   root :to => 'users#new'
